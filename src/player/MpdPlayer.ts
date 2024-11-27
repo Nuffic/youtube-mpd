@@ -21,7 +21,7 @@ export class MpdPlayer extends Player {
         console.log("Creating new renderer: " + this.config.host);
         this.httpServer = null;
         // Instantiate the mediarender client
-        
+
         this.client = await mpdapi.connect(this.config);
         await this.client.api.playback.single('oneshot');
         await this.client.api.playback.consume("0");

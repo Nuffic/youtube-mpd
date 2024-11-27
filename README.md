@@ -62,4 +62,4 @@ Install ytm-mpd:
 
 Run yt-mpd:
 
-    MPD_HOST=localhost MPD_PORT=6600 MPD_PASSWORD=YOUR_PASSWORD  node dist/index.js
+    NAME=myplayer MPD_HOST=localhost MPD_PORT=6600 MPD_PASSWORD=YOUR_PASSWORD  node dist/index.js

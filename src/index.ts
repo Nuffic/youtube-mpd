@@ -16,8 +16,8 @@ await player.initialize();
 
 const receiver = new YouTubeCastReceiver(player, {
     'device': {
-        'name': 'YT-MPD',
-        'screenName': 'YT-MPD',
+        'name': process.env.NAME,
+        'screenName': process.env.NAME,
     }
 });
 
